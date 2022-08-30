@@ -18,7 +18,7 @@
   cursor: pointer;
 }
 
-.header ul {
+.nav-default {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -38,4 +38,35 @@
 
 .header a:hover {
   color: #3b404b;
+}
+
+/* .header button {
+  
+} */
+
+.hamburger {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .nav-mobile {
+    z-index: 1;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin: 0;
+    padding: 2rem 2rem;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .nav-default {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
 }
